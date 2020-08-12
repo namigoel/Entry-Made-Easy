@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CarddetectActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:visibility="gone"
+       android:id="@+id/ivMain"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detectedText"
+        android:layout_below="@id/ivMain"
+        android:textSize="20dp"
+
+        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_below="@id/detectedText"
+                android:id="@+id/rotate"
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_bg"
+                android:text="rotate"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/rotate"
+        android:background="@drawable/round_bg"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:id="@+id/capture"
+        android:text="capture"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/capture"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_bg"
+        android:id="@+id/detect"
+        android:text="detect"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
